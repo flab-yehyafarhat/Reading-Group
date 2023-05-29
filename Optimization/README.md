@@ -1,4 +1,4 @@
-# #1589F0 Optimization focused papers; respective titles and abstracts 
+# - Optimization focused papers
 
 
 # Learning to Solve Optimization Problems with Hard Linear Constraints
