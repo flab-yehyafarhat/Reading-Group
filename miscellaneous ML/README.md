@@ -67,7 +67,7 @@ successfully train complex novel behaviors with about an hour of human time.
 These behaviors and environments are considerably more complex than any which
 have been previously learned from human feedback.
 
-# SURGICAL FINE-TUNING IMPROVES ADAPTATION TO DISTRIBUTION SHIFTS
+# Surgical Fine-Tuninf Improves Adaptation To Distribution Shifts
 
 A common approach to transfer learning under distribution shift is to fine-tune the
 last few layers of a pre-trained model, preserving learned features while also adapting to the new task. This paper shows that in such settings, selectively fine-tuning
