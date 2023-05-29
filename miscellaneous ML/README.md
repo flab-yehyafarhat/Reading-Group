@@ -1,5 +1,5 @@
 
-# nonspecific ML focused papers 
+# Nonspecific ML focused papers 
 
 # Neural Functional Transformers
 The recent success of neural networks as implicit representation of data has driven
@@ -67,4 +67,15 @@ successfully train complex novel behaviors with about an hour of human time.
 These behaviors and environments are considerably more complex than any which
 have been previously learned from human feedback.
 
+# SURGICAL FINE-TUNING IMPROVES ADAPTATION TO DISTRIBUTION SHIFTS
 
+A common approach to transfer learning under distribution shift is to fine-tune the
+last few layers of a pre-trained model, preserving learned features while also adapting to the new task. This paper shows that in such settings, selectively fine-tuning
+a subset of layers (which we term surgical fine-tuning) matches or outperforms
+commonly used fine-tuning approaches. Moreover, the type of distribution shift influences which subset is more effective to tune: for example, for image corruptions,
+fine-tuning only the first few layers works best. We validate our findings systematically across seven real-world data tasks spanning three types of distribution shifts.
+Theoretically, we prove that for two-layer neural networks in an idealized setting,
+first-layer tuning can outperform fine-tuning all layers. Intuitively, fine-tuning
+more parameters on a small target dataset can cause information learned during
+pre-training to be forgotten, and the relevant information depends on the type of
+shift.
