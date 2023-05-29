@@ -37,3 +37,15 @@ tasks that require processing the weights of MLPs and CNNs, such as predicting
 classifier generalization, producing “winning ticket” sparsity masks for initializations,
 and editing the weights of implicit neural representations (INRs). In addition,
 we provide code for our models and experiments.
+
+# Visualizing the Loss Landscape of Neural Nets
+Neural network training relies on our ability to find “good” minimizers of highly
+non-convex loss functions. It is well-known that certain network architecture
+designs (e.g., skip connections) produce loss functions that train easier, and wellchosen training parameters (batch size, learning rate, optimizer) produce minimizers that generalize better. However, the reasons for these differences, and their
+effect on the underlying loss landscape, are not well understood. In this paper, we
+explore the structure of neural loss functions, and the effect of loss landscapes on
+generalization, using a range of visualization methods. First, we introduce a simple
+“filter normalization” method that helps us visualize loss function curvature and
+make meaningful side-by-side comparisons between loss functions. Then, using
+a variety of visualizations, we explore how network architecture affects the loss
+landscape, and how training parameters affect the shape of minimizers.
