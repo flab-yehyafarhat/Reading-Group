@@ -1,7 +1,8 @@
+# Optimization focused papers; respective titles and abstracts 
+
 
 # Learning to Solve Optimization Problems with Hard Linear Constraints
 
-Abstract
 Constrained optimization problems appear in a wide variety
 of challenging real-world problems, where constraints often
 capture the physics of the underlying system. Classic methods
@@ -39,7 +40,7 @@ the solution compared to existing approaches
 
 # End-to-End Feasible Optimization Proxies for Large-Scale Economic Dispatch
 
-Abstract—The paper proposes a novel End-to-End Learning
+The paper proposes a novel End-to-End Learning
 and Repair (E2ELR) architecture for training optimization
 proxies for economic dispatch problems. E2ELR combines deep
 neural networks with closed-form, differentiable repair layers,
