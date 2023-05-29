@@ -58,3 +58,19 @@ distribution is a crucial ingredient to maximize the transfer learning abilities
 regimes where model sizes are relatively small. Besides performance improvements, our framework also shows that
 with careful pre-training and private fine-tuning, smaller models can match the performance of much larger models,
 highlighting the promise of differentially private training as a tool for model compression and efficiency
+
+# Personalized DP-SGD using Sampling Mechanisms
+
+Personalized privacy becomes critical in deep learning for Trustworthy AI. While
+Differentially Private Stochastic Gradient Descent (DP-SGD) is widely used in
+deep learning methods supporting privacy, it provides the same level of privacy
+to all individuals, which may lead to overprotection and low utility. In practice,
+different users may require different privacy levels, and the model can be improved
+by using more information about the users with lower privacy requirements. There
+are also recent works on differential privacy of individuals when using DP-SGD,
+but they are mostly about individual privacy accounting and do not focus on satisfying different privacy levels. We thus extend DP-SGD to support a recent privacy
+notion called (Φ, ∆)-Personalized Differential Privacy ((Φ, ∆)-PDP), which extends an existing PDP concept called Φ-PDP. Our algorithm uses a multi-round
+personalized sampling mechanism and embeds it within the DP-SGD iterations.
+Experiments on real datasets show that our algorithm outperforms DP-SGD and
+simple combinations of DP-SGD with existing PDP mechanisms in terms of model
+performance and efficiency due to its embedded sampling mechanism.
