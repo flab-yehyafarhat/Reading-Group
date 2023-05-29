@@ -67,24 +67,4 @@ successfully train complex novel behaviors with about an hour of human time.
 These behaviors and environments are considerably more complex than any which
 have been previously learned from human feedback.
 
-# Backpropagation-free Training of Deep Physical Neural Networks
-
-Recent years have witnessed the outstanding success of deep learning in various fields such as vision and natural language processing. This success is
-largely indebted to the massive size of deep learning models that is expected to
-increase unceasingly. This growth of the deep learning models is accompanied
-by issues related to their considerable energy consumption, both during the
-training and inference phases, as well as their scalability. Although a number
-of work based on unconventional physical systems, such as wave-based frameworks, have been proposed which addresses the issue of energy efficiency in the
-inference phase, efficient training of deep learning models has remained unaddressed. So far, training of digital deep learning models mainly relies on backpropagation, which is not suitable for physical implementation as it requires
-perfect knowledge of the computation performed in the so called forward pass
-of the neural network. Here, we tackle this issue by proposing a simple deep
-neural network architecture augmented by a biologically plausible learning algorithm, referred to as ”model-free forward-forward training”. The proposed architecture enables training deep physical neural networks consisting
-of layers of physical nonlinear systems, without requiring detailed knowledge
-of the nonlinear physical layers’ properties. We show that our method outperforms state-of-the-art hardware-aware training methods by improving training speed, decreasing digital computations, and reducing power consumption
-in physical systems, particularly optics. We demonstrate the robustness and
-adaptability of the proposed method, even in systems exposed to dynamic or
-unpredictable external perturbations. To showcase the universality of our approach, we train diverse wave-based physical neural networks that vary in the
-underlying wave phenomenon and the type of non-linearity they use, to perform vowel and image classification tasks experimentally. This work paves the
-way for the ambitious goals of hybrid training massive physical neural networks, which can offer high-speed and lower energy consumption not only for
-inference but also during the training phase.
 
