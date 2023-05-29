@@ -21,3 +21,13 @@ pairs, such as ImageNet as public data and CIFAR10 and CelebA as private data,
 and SVHN as public data and MNIST as private data. Our approach provides a
 promising direction for training more powerful, yet training-efficient differentially
 private DMs that can produce high-quality synthetic images
+
+
+# Privacy Auditing with One (1) Training Run
+
+We propose a scheme for auditing differentially private machine learning systems
+with a single training run. This exploits the parallelism of being able to add or remove
+multiple training examples independently. We analyze this using the connection between differential privacy and statistical generalization, which avoids the cost of group
+privacy. Our auditing scheme requires minimal assumptions about the algorithm and
+can be applied in the black-box or white-box setting
+
