@@ -52,3 +52,18 @@ landscape, and how training parameters affect the shape of minimizers.
 
 # On progressive sharpening, flat minima and generalisation
 We present a new approach to understanding the relationship between loss curvature and generalisation in deep learning. Specifically, we use existing empirical analyses of the spectrum of deep network loss Hessians to ground an ansatz tying together the loss Hessian and the input-output Jacobian of a deep neural network. We then prove a series of theoretical results which quantify the degree to which the input-output Jacobian of a model approximates its Lipschitz norm over a data distribution, and deduce a novel generalisation bound in terms of the empirical Jacobian. We use our ansatz, together with our theoretical results, to give a new account of the recently observed progressive sharpening phenomenon, as well as the generalisation properties of flat minima. Experimental evidence is provided to validate our claims.
+
+# Deep reinforcement learning from human preferences
+For sophisticated reinforcement learning (RL) systems to interact usefully with
+real-world environments, we need to communicate complex goals to these systems.
+In this work, we explore goals defined in terms of (non-expert) human preferences
+between pairs of trajectory segments. We show that this approach can effectively
+solve complex RL tasks without access to the reward function, including Atari
+games and simulated robot locomotion, while providing feedback on less than
+1% of our agent’s interactions with the environment. This reduces the cost of
+human oversight far enough that it can be practically applied to state-of-the-art
+RL systems. To demonstrate the flexibility of our approach, we show that we can
+successfully train complex novel behaviors with about an hour of human time.
+These behaviors and environments are considerably more complex than any which
+have been previously learned from human feedback.
+
