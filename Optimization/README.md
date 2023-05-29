@@ -1,5 +1,5 @@
 
-#Learning to Solve Optimization Problems with Hard Linear Constraints
+# Learning to Solve Optimization Problems with Hard Linear Constraints
 
 Abstract
 Constrained optimization problems appear in a wide variety
@@ -36,3 +36,21 @@ of image registration problems. Our results support our
 theoretical findings and demonstrate superior performance in
 terms of computational time, optimality, and the feasibility of
 the solution compared to existing approaches
+
+# End-to-End Feasible Optimization Proxies for Large-Scale Economic Dispatch
+
+Abstract—The paper proposes a novel End-to-End Learning
+and Repair (E2ELR) architecture for training optimization
+proxies for economic dispatch problems. E2ELR combines deep
+neural networks with closed-form, differentiable repair layers,
+thereby integrating learning and feasibility in an end-to-end
+fashion. E2ELR is also trained with self-supervised learning,
+removing the need for labeled data and the solving of numerous
+optimization problems offline. E2ELR is evaluated on industrysize
+power grids with tens of thousands of buses using an economic
+dispatch that co-optimizes energy and reserves. The results
+demonstrate that the self-supervised E2ELR achieves state-ofthe-
+art performance, with optimality gaps that outperform other
+baselines by at least an order of magnitude.
+Index Terms—Economic Dispatch, Deep Learning, Optimization
+Proxies
