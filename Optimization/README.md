@@ -112,5 +112,5 @@ in robotics. In this work, we present a method that implements an efficient back
 objective functions. We provide both theoretical and experimental backing. In
 particular, we incorporate the Gurobi MIP solver, Blossom V algorithm, and Dijkstra’s algorithm into architectures that extract suitable features from raw inputs
 for the traveling salesman problem, the min-cost perfect matching problem and
-the shortest path problem. The code is available at
+the shortest path problem
 
