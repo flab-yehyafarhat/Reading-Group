@@ -1,4 +1,4 @@
-# '''dif - Optimization focused papers '''
+#  Optimization focused papers
 
 
 # Learning to Solve Optimization Problems with Hard Linear Constraints
