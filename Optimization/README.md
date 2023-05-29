@@ -69,3 +69,19 @@ of our method, we provide generalization bounds (based on Rademacher complexity)
 that improve with the number of training problems and number of iterations simultaneously. We further apply our method to three real-time applications and observe
 that, by learning good warm-starts, we are able to significantly reduce the number of
 iterations required to obtain high-quality solutions.
+
+# Fast, Differentiable and Sparse Top-k: a Convex Analysis Perspective
+The top-k operator returns a k-sparse vector, where the non-zero values correspond to the k
+largest values of the input. Unfortunately, because it is a discontinuous function, it is difficult to
+incorporate in neural networks trained end-to-end with backpropagation. Recent works have
+considered differentiable relaxations, based either on regularization or perturbation techniques.
+However, to date, no approach is fully differentiable and sparse. In this paper, we propose new
+differentiable and sparse top-k operators. We view the top-k operator as a linear program over
+the permutahedron, the convex hull of permutations. We then introduce a p-norm regularization
+term to smooth out the operator, and show that its computation can be reduced to isotonic
+optimization. Our framework is significantly more general than the existing one and allows for
+example to express top-k operators that select values in magnitude. On the algorithmic side,
+in addition to pool adjacent violator (PAV) algorithms, we propose a new GPU/TPU-friendly
+Dykstra algorithm to solve isotonic optimization problems. We successfully use our operators
+to prune weights in neural networks, to fine-tune vision transformers, and as a router in sparse
+mixture of experts.
