@@ -46,3 +46,15 @@ requiring convexity or smoothness assumptions on the loss function. In addition,
 loss of regularized (unprojected) DP-SGD. To obtain these results, we directly analyze the hockey-stick
 divergence between coupled stochastic processes by relying on non-linear data processing inequalities.
 
+# Selective Pre-training for Private Fine-tuning
+
+Suppose we want to train text prediction models in email clients or word processors. The models must preserve the
+privacy of user data and adhere to a specific fixed size to meet memory and inference time requirements. We introduce
+a generic framework to solve this problem. Specifically, we are given a public dataset Dpub and a private dataset Dpriv
+corresponding to a downstream task T. How should we pre-train a fixed-size model M on Dpub and fine-tune it on
+Dpriv such that performance of M with respect to T is maximized and M satisfies differential privacy with respect to
+Dpriv? We show that pre-training on a subset of dataset Dpub that brings the public distribution closer to the private
+distribution is a crucial ingredient to maximize the transfer learning abilities of M after pre-training, especially in the
+regimes where model sizes are relatively small. Besides performance improvements, our framework also shows that
+with careful pre-training and private fine-tuning, smaller models can match the performance of much larger models,
+highlighting the promise of differentially private training as a tool for model compression and efficiency
