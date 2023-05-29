@@ -85,3 +85,21 @@ in addition to pool adjacent violator (PAV) algorithms, we propose a new GPU/TPU
 Dykstra algorithm to solve isotonic optimization problems. We successfully use our operators
 to prune weights in neural networks, to fine-tune vision transformers, and as a router in sparse
 mixture of experts.
+
+# Active Learning in the Predict-then-Optimize Framework: A Margin-Based Approach
+
+We develop the first active learning method in the predict-then-optimize framework. Specifically, we develop a
+learning method that sequentially decides whether to request the “labels” of feature samples from an unlabeled
+data stream, where the labels correspond to the parameters of an optimization model for decision-making.
+Our active learning method is the first to be directly informed by the decision error induced by the predicted
+parameters, which is referred to as the Smart Predict-then-Optimize (SPO) loss. Motivated by the structure
+of the SPO loss, our algorithm adopts a margin-based criterion utilizing the concept of distance to degeneracy
+and minimizes a tractable surrogate of the SPO loss on the collected data. In particular, we develop an
+efficient active learning algorithm with both hard and soft rejection variants, each with theoretical excess
+risk (i.e., generalization) guarantees. We further derive bounds on the label complexity, which refers to the
+number of samples whose labels are acquired to achieve a desired small level of SPO risk. Under some natural
+low-noise conditions, we show that these bounds can be better than the naive supervised learning approach
+that labels all samples. Furthermore, when using the SPO+ loss function, a specialized surrogate of the
+SPO loss, we derive a significantly smaller label complexity under separability conditions. We also present
+numerical evidence showing the practical value of our proposed algorithms in the settings of personalized
+pricing and the shortest path problem
