@@ -55,3 +55,17 @@ art performance, with optimality gaps that outperform other
 baselines by at least an order of magnitude.
 Index Terms—Economic Dispatch, Deep Learning, Optimization
 Proxies
+
+# End-to-End Learning to Warm-Start for Real-Time Quadratic Optimization
+First-order methods are widely used to solve convex quadratic programs (QPs) in
+real-time applications because of their low per-iteration cost. However, they can suffer
+from slow convergence to accurate solutions. In this paper, we present a framework
+which learns an effective warm-start for a popular first-order method in real-time applications, Douglas-Rachford (DR) splitting, across a family of parametric QPs. This
+framework consists of two modules: a feedforward neural network block, which takes
+as input the parameters of the QP and outputs a warm-start, and a block which performs a fixed number of iterations of DR splitting from this warm-start and outputs
+a candidate solution. A key feature of our framework is its ability to do end-to-end
+learning as we differentiate through the DR iterations. To illustrate the effectiveness
+of our method, we provide generalization bounds (based on Rademacher complexity)
+that improve with the number of training problems and number of iterations simultaneously. We further apply our method to three real-time applications and observe
+that, by learning good warm-starts, we are able to significantly reduce the number of
+iterations required to obtain high-quality solutions.
