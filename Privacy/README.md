@@ -31,3 +31,18 @@ multiple training examples independently. We analyze this using the connection b
 privacy. Our auditing scheme requires minimal assumptions about the algorithm and
 can be applied in the black-box or white-box setting
 
+# Privacy Loss of Noisy Stochastic Gradient Descent Might Converge Even for Non-Convex Losses
+
+The Noisy-SGD algorithm is widely used for privately training machine learning models. Traditional
+privacy analyses of this algorithm assume that the internal state is publicly revealed, resulting in privacy
+loss bounds that increase indefinitely with the number of iterations. However, recent findings have shown
+that if the internal state remains hidden, then the privacy loss might remain bounded. Nevertheless, this
+remarkable result heavily relies on the assumption of (strong) convexity of the loss function. It remains
+an important open problem to further relax this condition while proving similar convergent upper bounds
+on the privacy loss. In this work, we address this problem for DP-SGD, a popular variant of Noisy-SGD
+that incorporates gradient clipping to limit the impact of individual samples on the training process. Our
+findings demonstrate that the privacy loss of projected DP-SGD converges exponentially fast, without
+requiring convexity or smoothness assumptions on the loss function. In addition, we analyze the privacy
+loss of regularized (unprojected) DP-SGD. To obtain these results, we directly analyze the hockey-stick
+divergence between coupled stochastic processes by relying on non-linear data processing inequalities.
+
