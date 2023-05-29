@@ -1,5 +1,5 @@
 
-# Privacy & fairness related papers; respective titles and abstracts
+# Privacy & fairness related papers
 
 
 
