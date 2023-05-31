@@ -90,3 +90,19 @@ Recent work in scientific machine learning (SciML) has focused on incorporating 
 
 # Sharpness-Aware Minimization Leads to Low-Rank Features
 Sharpness-aware minimization (SAM) is a recently proposed method that minimizes the sharpness of the training loss of a neural network. While its generalization improvement is well-known and is the primary motivation, we uncover an additional intriguing effect of SAM: reduction of the feature rank which happens at different layers of a neural network. We show that this low-rank effect occurs very broadly: for different architectures such as fully-connected networks, convolutional networks, vision transformers and for different objectives such as regression, classification, language-image contrastive training. To better understand this phenomenon, we provide a mechanistic understanding of how low-rank features arise in a simple two-layer network. We observe that a significant number of activations gets entirely pruned by SAM which directly contributes to the rank reduction. We confirm this effect theoretically and check that it can also occur in deep networks, although the overall rank reduction mechanism can be more complex, especially for deep networks with pre-activation skip connections and self-attention layers.
+
+# SGD with large step sizes learns sparse features
+We showcase important features of the dynamics of the Stochastic Gradient Descent (SGD)
+in the training of neural networks. We present empirical observations that commonly used
+large step sizes (i) lead the iterates to jump from one side of a valley to the other causing
+loss stabilization, and (ii) this stabilization induces a hidden stochastic dynamics orthogonal
+to the bouncing directions that biases it implicitly toward simple predictors. Furthermore, we
+show empirically that the longer large step sizes keep SGD high in the loss landscape valleys,
+the better the implicit regularization can operate and find sparse representations. Notably,
+no explicit regularization is used so that the regularization effect comes solely from the SGD
+training dynamics influenced by the step size schedule. Therefore, these observations unveil
+how, through the step size schedules, both gradient and noise drive together the SGD dynamics
+through the loss landscape of neural networks. We justify these findings theoretically through the
+study of simple neural network models as well as qualitative arguments inspired from stochastic
+processes. Finally, this analysis allows to shed a new light on some common practice and
+observed phenomena when training neural networks
